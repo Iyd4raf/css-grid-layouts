@@ -1,0 +1,134 @@
+
+@media (min-width: 576px) { 
+   
+}
+
+@media (min-width: 768px) { 
+    .container {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+ }
+
+@media (min-width: 992px) { 
+    .container {
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+ }
+
+@media (min-width: 1200px) { 
+    .container {
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+ }
+
+body {
+    font-family: roboto;
+}
+
+.container {
+    background-color: #2196F3;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    display: grid;
+    grid-template-areas:
+        'header header header header header' 
+        'nav nav nav nav nav' 
+        'main main main main sidebar' 
+        'footer footer footer footer footer';
+    grid-gap: 10px;
+}
+
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+}
+
+
+.header {grid-area: header;}
+.nav {grid-area: nav;}
+.main {grid-area: main;}
+.sidebar {grid-area: sidebar;}
+.footer {grid-area: footer;}
+
+
+.nav {
+    
+}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.logo-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: lightblue;
+}
+
+.header {
+    background: url('../images/underwater.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+
+.thumb {
+    width: 100%;
+    height: auto;
+}
+
+.search-articles {
+    margin-bottom: 30px;
+}
+
+.popular-article {
+    margin: 12px 0;
+    display: flex;
+}
+
+.popular-article-thumb {
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.popular-article-head {
+    margin: 0;
+}
+
+
+.popular-article-link {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.popular-article-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.seperator {
+    margin: 30px 0;
+    height: 10px;
+    background-color: lightseagreen;
+}

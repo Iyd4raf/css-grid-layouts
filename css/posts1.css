@@ -1,0 +1,13 @@
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    grid-gap: 15px;
+}
+
+
+.article {
+    border: 1px solid lightgray;
+    padding: 4px;
+}
+

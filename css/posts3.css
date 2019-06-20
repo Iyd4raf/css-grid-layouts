@@ -1,0 +1,71 @@
+
+.article {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-areas: 
+        'heading heading heading heading heading'
+        'thumb thumb entry entry entry'
+        'thumb thumb entry entry entry';
+}
+
+.post-heading {
+    grid-area: heading;
+}
+
+.post-heading > h1 {
+    font-size: 2em;
+}
+
+.post-thumb {
+    grid-area: thumb;
+    margin-right: 25px;
+}
+
+.post-thumb > img {
+    border-radius: 5px;
+}
+
+.post-entry {
+    grid-area: entry;
+}
+
+.post-entry > p {
+    margin-top: 0;
+    line-height: 28px;
+}
+
+.article-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.article-link:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.post-button {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.post-button:hover {
+    background-color: #41bfe6;
+}
+
+.post-author {
+    color: #0275d8;
+    font-weight: bold;
+}
+
+
+.post-created-at {
+    font-size: .9rem;
+}
